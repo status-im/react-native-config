@@ -62,7 +62,7 @@ QVariantMap ReactNativeConfig::constantsToExport() {
         if (line.count(Delimiter) == 1) {
             QStringList values = line.split(Delimiter);
             if (values.size() == 2) {
-                config[values[0]] = values[1];
+                config[values[0].trimmed()] = values[1].trimmed();
             }
         }
 
