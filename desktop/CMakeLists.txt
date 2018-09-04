@@ -4,7 +4,7 @@ if (NOT ENVFILE)
   if (DEFINED ENV{ENVFILE})
     set(ENVFILE $ENV{ENVFILE})
   else()
-    set(ENVFILE ".env")
+    set(ENVFILE "/.env")
   endif()
 endif()
 
